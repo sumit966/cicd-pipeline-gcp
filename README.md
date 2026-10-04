@@ -450,7 +450,7 @@ ab -n 10000 -c 100 http://<vm-ip>/health
 **Sumit Raj**
 
 - 🌐 Portfolio: [sumit966-github-io.vercel.app](https://sumit966-github-io.vercel.app)
-- 💼 LinkedIn: [linkedin.com/in/er-sumit-raj](https://linkedin.com/in/er-sumit-raj)
+- 💼 LinkedIn: [linkedin.com/in/er-sumit-raj](https://www.linkedin.com/in/er-sumit-raj-/)
 - 🐙 GitHub: [github.com/sumit966](https://github.com/sumit966)
 - 📧 Email: info.sr0909@gmail.com
 
