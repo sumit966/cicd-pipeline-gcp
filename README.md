@@ -1,67 +1,241 @@
-# 🚀 CI/CD Pipeline with Docker & GCP
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- 🚀 CI/CD Pipeline with Docker & GCP — DevOps Animated README -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-Production-grade CI/CD pipeline that builds, tests, and deploys a containerized Python application to **GCP Compute Engine** via **GitHub Actions** — reducing manual deployment time by **70%**.
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Docker](https://img.shields.io/badge/Docker-24.0-2496ED?logo=docker)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?logo=githubactions)
-![GCP](https://img.shields.io/badge/GCP-Compute_Engine-4285F4?logo=googlecloud)
-![Terraform](https://img.shields.io/badge/Terraform-1.6-7B42BC?logo=terraform)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?logo=fastapi)
-![Nginx](https://img.shields.io/badge/Nginx-Reverse_Proxy-009639?logo=nginx)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:3b82f6,100:0d1117&height=240&section=header&text=🚀%20CI/CD%20Pipeline&fontSize=52&fontColor=ffffff&animation=scaleIn&fontAlignY=40&desc=Docker%20·%20GitHub%20Actions%20·%20GCP%20Compute%20Engine&descAlignY=60&descSize=18" />
 
-> **DevOps Project** · Author: Sumit Raj · M.Tech VNIT Nagpur
+</div>
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=800&color=3B82F6&center=true&vCenter=true&multiline=true&width=850&height=120&lines=🚀+Production-Grade+CI%2FCD+Pipeline;🐳+Multi-Stage+Docker+Builds;☁️+GCP+Compute+Engine+Deploy;⚡+70%25+Faster+Deployments;🔄+Zero-Downtime+with+Rollback" alt="Typing SVG" />
+
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/sumit966/cicd-pipeline-gcp/stargazers">
+    <img src="https://img.shields.io/github/stars/sumit966/cicd-pipeline-gcp?style=for-the-badge&color=3b82f6&labelColor=0d1117&logo=github&logoColor=white" />
+  </a>
+  <a href="https://github.com/sumit966/cicd-pipeline-gcp/network/members">
+    <img src="https://img.shields.io/github/forks/sumit966/cicd-pipeline-gcp?style=for-the-badge&color=8b5cf6&labelColor=0d1117&logo=git&logoColor=white" />
+  </a>
+  <a href="https://github.com/sumit966/cicd-pipeline-gcp/issues">
+    <img src="https://img.shields.io/github/issues/sumit966/cicd-pipeline-gcp?style=for-the-badge&color=ec4899&labelColor=0d1117&logo=github&logoColor=white" />
+  </a>
+  <a href="https://github.com/sumit966/cicd-pipeline-gcp/commits/main">
+    <img src="https://img.shields.io/github/last-commit/sumit966/cicd-pipeline-gcp?style=for-the-badge&color=10b981&labelColor=0d1117&logo=git&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/github/license/sumit966/cicd-pipeline-gcp?style=for-the-badge&color=f59e0b&labelColor=0d1117&logo=opensourceinitiative&logoColor=white" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-24.0-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/GCP-Compute_Engine-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/Terraform-1.6-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-Reverse_Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Deploy_Time-70%25_Faster-10b981?style=for-the-badge&logo=speedtest&logoColor=white" />
+  <img src="https://img.shields.io/badge/Image_Size-60%25_Smaller-3b82f6?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rollback-30s-8b5cf6?style=for-the-badge&logo=rotateleft&logoColor=white" />
+  <img src="https://img.shields.io/badge/Uptime-99.9%25-f59e0b?style=for-the-badge&logo=uptimekuma&logoColor=white" />
+</div>
+
+<br/>
+
+<div align="center">
+  <i>⚙️ DevOps Project · Author: <b>Sumit Raj</b> · M.Tech VNIT Nagpur</i>
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 ---
 
 ## 📑 Table of Contents
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Architecture](#️-architecture)
-- [Tech Stack](#️-tech-stack)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Requirements](#-requirements)
-- [Configuration](#️-configuration)
-- [Usage](#-usage)
-- [Pipeline Flow](#-pipeline-flow)
-- [Results](#-results)
-- [Dataset](#-dataset)
-- [Testing](#-testing)
-- [Author](#-author)
-- [License](#-license)
+<div align="center">
+
+| 🚀 | 🎯 | 🏗️ |
+|:---:|:---:|:---:|
+| [Overview](#-overview) | [Features](#-features) | [Architecture](#️-architecture) |
+| [Tech Stack](#️-tech-stack) | [Structure](#-project-structure) | [Installation](#-installation) |
+| [Requirements](#-requirements) | [Configuration](#️-configuration) | [Usage](#-usage) |
+| [Pipeline](#-pipeline-flow) | [Results](#-results) | [Testing](#-testing) |
+| [Author](#-author) | [License](#-license) | |
+
+</div>
 
 ---
 
 ## 🎯 Overview
 
-Manual deployment is slow, error-prone, and doesn't scale. This project implements a **complete CI/CD pipeline** that:
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="400" alt="DevOps animation"/>
+</div>
 
-1. **On Pull Request** — runs tests, lint, and Docker build (CI)
-2. **On Merge to Main** — builds image, pushes to registry, deploys to GCP, runs health check (CD)
-3. **On Failure** — automatically rolls back to previous version
-4. **All infrastructure** — provisioned with Terraform
+<br/>
 
-**Goal:** Push code → automatically live on GCP in under 3 minutes.
+Manual deployment is slow, error-prone, and doesn't scale. This project implements a **complete CI/CD pipeline**:
+
+<table align="center">
+<tr>
+<td width="25%" align="center">
+
+### 1️⃣ PR Check
+
+<img src="https://img.shields.io/badge/✅-Tests_+_Lint-10b981?style=for-the-badge" />
+
+Runs tests, lint, Docker build (CI)
+
+</td>
+<td width="25%" align="center">
+
+### 2️⃣ Main Merge
+
+<img src="https://img.shields.io/badge/🚀-Build_+_Deploy-3b82f6?style=for-the-badge" />
+
+Builds image → pushes → deploys to GCP
+
+</td>
+<td width="25%" align="center">
+
+### 3️⃣ Health Check
+
+<img src="https://img.shields.io/badge/🩺-30s_Probe-8b5cf6?style=for-the-badge" />
+
+Verifies container + auto-rollback on fail
+
+</td>
+<td width="25%" align="center">
+
+### 4️⃣ Infra
+
+<img src="https://img.shields.io/badge/🏗️-Terraform_IaC-7B42BC?style=for-the-badge" />
+
+All GCP infra provisioned with code
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+
+> **🎯 Goal:** Push code → **automatically live on GCP in under 3 minutes.**
+
+</div>
 
 ---
 
 ## ✨ Features
 
-- **Multi-stage Docker builds** — 60% smaller images
-- **GitHub Actions CI/CD** — build → test → push → deploy
-- **GCP Compute Engine deployment** — with startup scripts
-- **Terraform IaC** — VPC, firewall, VM, static IP
-- **Nginx reverse proxy** — SSL-ready, gzip, rate limiting
-- **Health checks** — automatic rollback on failure
-- **Zero-downtime deployment** — container swap strategy
-- **Secrets management** — GitHub Secrets + GCP Secret Manager
-- **70% faster deployments** — from 10 min → 3 min
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### 🐳 Container & Build
+
+- 🔨 **Multi-stage Docker builds** — 60% smaller images
+- ⚡ **Build cache** optimized for speed
+- 📦 **GCR registry** push
+- 🔐 **Image scanning** ready
+
+</td>
+<td width="50%" valign="top">
+
+### 🚀 CI/CD
+
+- ⚙️ **GitHub Actions** — build → test → push → deploy
+- 🩺 **Health checks** — auto rollback on failure
+- ♻️ **Zero-downtime** container swap
+- 🔐 **Secrets management** via GitHub
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ☁️ Infrastructure
+
+- 🏗️ **Terraform IaC** — VPC, firewall, VM, static IP
+- 🌐 **Nginx reverse proxy** — SSL-ready
+- 📊 **GCP Cloud Logging** integrated
+- 🛡️ **Firewall rules** as code
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ Performance
+
+- 🚀 **70% faster deploys** (10 min → 3 min)
+- ⏪ **30s rollback** (vs 15 min manual)
+- 📉 **~0 human errors**
+- 📈 **99.9% uptime** over 30 days
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🏗️ Architecture
+
+### 🌐 End-to-End Pipeline
+
+```mermaid
+flowchart TD
+    A[👨‍💻 Developer Push] --> B[📦 GitHub Repo]
+    B --> C{🔀 Event Type}
+    C -->|Pull Request| D[✅ CI Tests]
+    C -->|Merge to Main| E[🚀 CD Deploy]
+    D --> F[🐳 Docker Build Test]
+    E --> G[🐳 Build + Tag Image]
+    G --> H[📤 Push to GCR]
+    H --> I[🔐 SSH to GCP VM]
+    I --> J[⬇️ Pull New Image]
+    J --> K[🔄 Container Swap]
+    K --> L{🩺 Health Check}
+    L -->|✅ Pass| M[🎉 Live]
+    L -->|❌ Fail| N[⏪ Rollback]
+    
+    style A fill:#8b5cf6,stroke:#fff,color:#fff
+    style E fill:#3b82f6,stroke:#fff,color:#fff
+    style H fill:#4285F4,stroke:#fff,color:#fff
+    style M fill:#10b981,stroke:#fff,color:#fff
+    style N fill:#ef4444,stroke:#fff,color:#fff
+```
+
+### ☁️ GCP Deployment Architecture
+
+```mermaid
+flowchart LR
+    U[🌐 Users] --> N[🛡️ Nginx:80]
+    N --> F[⚡ FastAPI:8000]
+    F --> D[🐳 Docker Container]
+    D --> L[📊 Cloud Logging]
+    
+    style U fill:#f59e0b,stroke:#fff,color:#fff
+    style N fill:#009639,stroke:#fff,color:#fff
+    style F fill:#009688,stroke:#fff,color:#fff
+    style D fill:#2496ED,stroke:#fff,color:#fff
+```
+
+### 📐 ASCII Fallback
 
 ```
 ┌───────────────────────────────────────────────────────────────┐
@@ -99,18 +273,52 @@ Manual deployment is slow, error-prone, and doesn't scale. This project implemen
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|----------|-----------|
-| Language | Python 3.10 |
-| Web Framework | FastAPI |
-| Containerization | Docker (multi-stage) |
-| Reverse Proxy | Nginx |
-| CI/CD | GitHub Actions |
-| Cloud | GCP Compute Engine |
-| IaC | Terraform |
-| Registry | Google Container Registry (GCR) |
-| Secrets | GitHub Secrets + GCP Secret Manager |
-| Monitoring | Health check endpoint + Cloud Logging |
+<table align="center">
+<tr>
+<td><b>Category</b></td>
+<td><b>Technology</b></td>
+</tr>
+<tr>
+<td>🐍 Language</td>
+<td><img src="https://img.shields.io/badge/Python_3.10-3776AB?style=flat-square&logo=python&logoColor=white" /></td>
+</tr>
+<tr>
+<td>⚡ Web Framework</td>
+<td><img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" /></td>
+</tr>
+<tr>
+<td>🐳 Containerization</td>
+<td><img src="https://img.shields.io/badge/Docker-multi--stage-2496ED?style=flat-square&logo=docker&logoColor=white" /></td>
+</tr>
+<tr>
+<td>🛡️ Reverse Proxy</td>
+<td><img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" /></td>
+</tr>
+<tr>
+<td>⚙️ CI/CD</td>
+<td><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" /></td>
+</tr>
+<tr>
+<td>☁️ Cloud</td>
+<td><img src="https://img.shields.io/badge/GCP_Compute_Engine-4285F4?style=flat-square&logo=googlecloud&logoColor=white" /></td>
+</tr>
+<tr>
+<td>🏗️ IaC</td>
+<td><img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" /></td>
+</tr>
+<tr>
+<td>📦 Registry</td>
+<td><img src="https://img.shields.io/badge/GCR-Google_Container_Registry-4285F4?style=flat-square&logo=googlecloud&logoColor=white" /></td>
+</tr>
+<tr>
+<td>🔐 Secrets</td>
+<td><img src="https://img.shields.io/badge/GitHub_Secrets-181717?style=flat-square&logo=github&logoColor=white" /> <img src="https://img.shields.io/badge/GCP_Secret_Manager-4285F4?style=flat-square&logo=googlecloud&logoColor=white" /></td>
+</tr>
+<tr>
+<td>📊 Monitoring</td>
+<td><img src="https://img.shields.io/badge/Cloud_Logging-4285F4?style=flat-square&logo=googlecloud&logoColor=white" /></td>
+</tr>
+</table>
 
 ---
 
@@ -118,44 +326,52 @@ Manual deployment is slow, error-prone, and doesn't scale. This project implemen
 
 ```
 cicd-pipeline-gcp/
-├── app/
+├── ⚡ app/
 │   ├── main.py                    # FastAPI app
 │   ├── requirements.txt
-│   └── Dockerfile
-├── terraform/
+│   └── 🐳 Dockerfile
+├── 🏗️ terraform/
 │   ├── main.tf                    # GCP infra
 │   ├── variables.tf
 │   ├── outputs.tf
 │   └── terraform.tfvars.example
-├── .github/workflows/
+├── ⚙️ .github/workflows/
 │   ├── ci.yml                     # Test on PR
 │   └── deploy.yml                 # Deploy on main
-├── nginx/
+├── 🛡️ nginx/
 │   └── nginx.conf
-├── scripts/
+├── 📜 scripts/
 │   ├── deploy.sh
 │   └── healthcheck.sh
-├── tests/
+├── 🧪 tests/
 │   └── test_app.py
-├── docker-compose.yml
-├── .env.example
-├── .gitignore
-├── LICENSE
-└── README.md
+├── 🐳 docker-compose.yml
+├── 🔐 .env.example
+├── 🚫 .gitignore
+├── 📜 LICENSE
+└── 📖 README.md
 ```
 
 ---
 
 ## 🚀 Installation
 
-### 1. Clone
+<div align="center">
+  <img src="https://img.shields.io/badge/⏱️_5_min_setup-3776AB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🔑_GCP_Account_Required-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/🐳_Docker_Required-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+</div>
+
+<br/>
+
+### 1️⃣ Clone
 
 ```bash
 git clone https://github.com/sumit966/cicd-pipeline-gcp.git
 cd cicd-pipeline-gcp
 ```
 
-### 2. Virtual Environment
+### 2️⃣ Virtual Environment
 
 ```bash
 python -m venv venv
@@ -163,13 +379,13 @@ venv\Scripts\activate        # Windows
 source venv/bin/activate     # Mac/Linux
 ```
 
-### 3. Install Dependencies
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r app/requirements.txt
 ```
 
-### 4. Run Locally
+### 4️⃣ Run Locally
 
 ```bash
 cd app
@@ -178,13 +394,13 @@ uvicorn main:app --reload
 
 Open: http://localhost:8000
 
-### 5. Docker
+### 5️⃣ Docker
 
 ```bash
 docker-compose up --build
 ```
 
-### 6. Deploy to GCP
+### 6️⃣ Deploy to GCP
 
 ```bash
 # Set up GCP credentials
@@ -204,9 +420,9 @@ git push origin main
 
 ## 📋 Requirements
 
-### `app/requirements.txt`
+### 📦 `app/requirements.txt`
 
-```
+```txt
 fastapi==0.109.0
 uvicorn[standard]==0.27.0
 pydantic==2.5.3
@@ -215,20 +431,41 @@ pytest==7.4.4
 httpx==0.26.0
 ```
 
-### Tools Needed
+### 🛠️ Tools Needed
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| Docker | 24.0+ | Containerization |
-| Terraform | 1.6+ | IaC for GCP |
-| gcloud CLI | Latest | GCP access |
-| Git | 2.40+ | Version control |
+<table align="center">
+<tr>
+<td><b>Tool</b></td>
+<td><b>Version</b></td>
+<td><b>Purpose</b></td>
+</tr>
+<tr>
+<td>🐳 Docker</td>
+<td>24.0+</td>
+<td>Containerization</td>
+</tr>
+<tr>
+<td>🏗️ Terraform</td>
+<td>1.6+</td>
+<td>IaC for GCP</td>
+</tr>
+<tr>
+<td>☁️ gcloud CLI</td>
+<td>Latest</td>
+<td>GCP access</td>
+</tr>
+<tr>
+<td>📦 Git</td>
+<td>2.40+</td>
+<td>Version control</td>
+</tr>
+</table>
 
 ---
 
 ## ⚙️ Configuration
 
-### `.env.example`
+### 🔐 `.env.example`
 
 ```bash
 # App
@@ -249,17 +486,36 @@ GCR_REGISTRY=gcr.io
 NGINX_PORT=80
 ```
 
-### GitHub Secrets (Settings → Secrets → Actions)
+### 🔑 GitHub Secrets (Settings → Secrets → Actions)
 
-| Secret | Purpose |
-|--------|---------|
-| `GCP_SA_KEY` | Service account JSON |
-| `GCP_PROJECT_ID` | GCP project ID |
-| `GCP_VM_IP` | VM external IP |
-| `GCP_SSH_KEY` | SSH private key |
-| `GCP_VM_USER` | SSH username |
+<table align="center">
+<tr>
+<td><b>Secret</b></td>
+<td><b>Purpose</b></td>
+</tr>
+<tr>
+<td><code>GCP_SA_KEY</code></td>
+<td>Service account JSON</td>
+</tr>
+<tr>
+<td><code>GCP_PROJECT_ID</code></td>
+<td>GCP project ID</td>
+</tr>
+<tr>
+<td><code>GCP_VM_IP</code></td>
+<td>VM external IP</td>
+</tr>
+<tr>
+<td><code>GCP_SSH_KEY</code></td>
+<td>SSH private key</td>
+</tr>
+<tr>
+<td><code>GCP_VM_USER</code></td>
+<td>SSH username</td>
+</tr>
+</table>
 
-### `terraform/terraform.tfvars.example`
+### 🏗️ `terraform/terraform.tfvars.example`
 
 ```hcl
 project_id   = "your-gcp-project-id"
@@ -273,7 +529,7 @@ machine_type = "e2-small"
 
 ## 🎮 Usage
 
-### Local Development
+### 💻 Local Development
 
 ```bash
 # Run app
@@ -289,7 +545,7 @@ docker build -t cicd-demo -f app/Dockerfile .
 docker run -p 8000:8000 cicd-demo
 ```
 
-### Deploy via GitHub Actions
+### 🚀 Deploy via GitHub Actions
 
 ```bash
 # Just push to main
@@ -299,23 +555,23 @@ git push origin main
 ```
 
 **GitHub Actions automatically:**
-1. Runs tests
-2. Builds Docker image
-3. Pushes to GCR
-4. SSH to GCP VM
-5. Pulls new image
-6. Restarts container
-7. Health check
-8. Rollback if failed
+1. ✅ Runs tests
+2. 🐳 Builds Docker image
+3. 📤 Pushes to GCR
+4. 🔐 SSH to GCP VM
+5. ⬇️ Pulls new image
+6. 🔄 Restarts container
+7. 🩺 Health check
+8. ⏪ Rollback if failed
 
-### Manual Deploy
+### 🛠️ Manual Deploy
 
 ```bash
 cd scripts
 bash deploy.sh
 ```
 
-### Health Check
+### 🩺 Health Check
 
 ```bash
 curl http://<vm-ip>/health
@@ -326,84 +582,86 @@ curl http://<vm-ip>/health
 
 ## 🔄 Pipeline Flow
 
-### CI (on Pull Request)
+### ✅ CI (on Pull Request)
 
-```
-PR opened
-   ↓
-Checkout code
-   ↓
-Setup Python 3.10
-   ↓
-Install deps
-   ↓
-Run pytest
-   ↓
-Lint with ruff
-   ↓
-Docker build (test only)
-   ↓
-✅ PR ready to merge
+```mermaid
+flowchart LR
+    A[📥 PR Opened] --> B[📦 Checkout]
+    B --> C[🐍 Setup Python 3.10]
+    C --> D[📥 Install Deps]
+    D --> E[🧪 Run pytest]
+    E --> F[🎨 Lint with ruff]
+    F --> G[🐳 Docker Build Test]
+    G --> H[✅ PR Ready]
+    
+    style A fill:#8b5cf6,stroke:#fff,color:#fff
+    style H fill:#10b981,stroke:#fff,color:#fff
 ```
 
-### CD (on push to main)
+### 🚀 CD (on push to main)
 
-```
-Push to main
-   ↓
-Checkout code
-   ↓
-Authenticate to GCP
-   ↓
-Build Docker image
-   ↓
-Push to GCR
-   ↓
-SSH to GCP VM
-   ↓
-Pull new image
-   ↓
-Stop old container
-   ↓
-Start new container
-   ↓
-Health check (30s)
-   ↓
-✅ Success → Done
-❌ Fail → Rollback to previous
+```mermaid
+flowchart TD
+    A[📥 Push to Main] --> B[📦 Checkout]
+    B --> C[🔐 Auth to GCP]
+    C --> D[🐳 Build Image]
+    D --> E[📤 Push to GCR]
+    E --> F[🔐 SSH to VM]
+    F --> G[⬇️ Pull New Image]
+    G --> H[🛑 Stop Old Container]
+    H --> I[▶️ Start New Container]
+    I --> J{🩺 Health Check 30s}
+    J -->|✅ Pass| K[🎉 Done]
+    J -->|❌ Fail| L[⏪ Rollback]
+    
+    style A fill:#8b5cf6,stroke:#fff,color:#fff
+    style K fill:#10b981,stroke:#fff,color:#fff
+    style L fill:#ef4444,stroke:#fff,color:#fff
 ```
 
 ---
 
 ## 📊 Results
 
-### Before vs After
+<div align="center">
+  <img src="https://img.shields.io/badge/Deploy_Time-70%25_Faster-10b981?style=for-the-badge&logo=speedtest&logoColor=white" />
+  <img src="https://img.shields.io/badge/Image_Size-60%25_Smaller-3b82f6?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rollback-97%25_Faster-8b5cf6?style=for-the-badge&logo=rotateleft&logoColor=white" />
+  <img src="https://img.shields.io/badge/Human_Errors-0-f59e0b?style=for-the-badge&logo=shieldcheck&logoColor=white" />
+  <img src="https://img.shields.io/badge/Uptime-99.9%25-ec4899?style=for-the-badge&logo=uptimekuma&logoColor=white" />
+</div>
+
+<br/>
+
+### ⚡ Before vs After
 
 | Metric | Before (Manual) | After (CI/CD) | Improvement |
-|--------|-----------------|---------------|-------------|
-| Deploy Time | 10 min | 3 min | **70% faster** |
-| Human Errors | ~3 per deploy | ~0 | **100% fewer** |
-| Rollback Time | 15 min | 30 sec | **97% faster** |
-| Test Coverage | Manual | Automated | ✅ |
-| Consistency | Variable | Deterministic | ✅ |
+|--------|:---------------:|:-------------:|:-----------:|
+| 🚀 Deploy Time | 10 min | **3 min** | **70% faster** |
+| ❌ Human Errors | ~3 per deploy | **~0** | **100% fewer** |
+| ⏪ Rollback Time | 15 min | **30 sec** | **97% faster** |
+| 🧪 Test Coverage | Manual | **Automated** | ✅ |
+| 📊 Consistency | Variable | **Deterministic** | ✅ |
 
-### Image Size Optimization
+### 🐳 Image Size Optimization
 
 | Stage | Size |
-|-------|------|
+|-------|:----:|
 | Naive build | 1.2 GB |
-| Multi-stage build | **480 MB** |
-| **Reduction** | **60%** |
+| **Multi-stage build** | **480 MB** |
+| **Reduction** | **60%** ✅ |
 
 ---
 
 ## 📊 Dataset
 
-This project doesn't use a dataset — it's infrastructure/DevOps. Test data:
+This project doesn't use a dataset — it's infrastructure/DevOps.
 
-- **Sample requests:** 1000 concurrent requests tested
-- **Load test tool:** `wrk` and `ab` (Apache Bench)
-- **Uptime:** 99.9% over 30 days
+### 🧪 Test Data
+
+- ⚡ **Sample requests:** 1000 concurrent requests tested
+- 🔨 **Load test tool:** `wrk` and `ab` (Apache Bench)
+- 📈 **Uptime:** 99.9% over 30 days
 
 ---
 
@@ -426,48 +684,104 @@ ab -n 10000 -c 100 http://<vm-ip>/health
 
 | Issue | Solution |
 |-------|----------|
-| SSH auth failed | Check `GCP_SSH_KEY` secret |
-| Docker build fail | Check `app/Dockerfile` syntax |
-| Terraform error | Run `terraform init` first |
-| Health check fail | Check container logs: `docker logs <container>` |
-| GCR permission denied | Grant `Storage Admin` role to SA |
-| VM not reachable | Check firewall rules in GCP console |
+| 🔐 SSH auth failed | Check `GCP_SSH_KEY` secret |
+| 🐳 Docker build fail | Check `app/Dockerfile` syntax |
+| 🏗️ Terraform error | Run `terraform init` first |
+| 🩺 Health check fail | Check container logs: `docker logs <container>` |
+| 📦 GCR permission denied | Grant `Storage Admin` role to SA |
+| 🌐 VM not reachable | Check firewall rules in GCP console |
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] Add HTTPS with Let's Encrypt
-- [ ] Multi-region deployment
-- [ ] Kubernetes migration (GKE)
-- [ ] Prometheus + Grafana monitoring
-- [ ] Slack notifications on deploy
+- [ ] 🔐 Add HTTPS with Let's Encrypt
+- [ ] 🌍 Multi-region deployment
+- [ ] ☸️ Kubernetes migration (GKE)
+- [ ] 📊 Prometheus + Grafana monitoring
+- [ ] 💬 Slack notifications on deploy
 
 ---
 
 ## 👤 Author
 
-**Sumit Raj**
+<div align="center">
 
-- 🌐 Portfolio: [sumit966-github-io.vercel.app](https://sumit966-github-io.vercel.app)
-- 💼 LinkedIn: [linkedin.com/in/er-sumit-raj](https://www.linkedin.com/in/er-sumit-raj-/)
-- 🐙 GitHub: [github.com/sumit966](https://github.com/sumit966)
-- 📧 Email: info.sr0909@gmail.com
+<img src="https://img.shields.io/badge/Sumit_Raj-DevOps_Engineer-3b82f6?style=for-the-badge&labelColor=0d1117" />
+
+<br/><br/>
+
+<b>M.Tech Applied AI & ML · VNIT Nagpur</b>
+
+<br/><br/>
+
+<a href="https://sumit966.github.io">
+  <img src="https://img.shields.io/badge/Portfolio-Visit-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/er-sumit-raj-/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://github.com/sumit966">
+  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="mailto:info.sr0909@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+</div>
 
 ---
 
 ## 🙏 Acknowledgements
 
-- [Docker](https://docker.com/)
-- [GitHub Actions](https://github.com/features/actions)
-- [Google Cloud Platform](https://cloud.google.com/)
-- [Terraform](https://terraform.io/)
-- [FastAPI](https://fastapi.tiangolo.com/)
+<div align="center">
+
+<a href="https://docker.com/">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+</a>
+<a href="https://github.com/features/actions">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+</a>
+<a href="https://cloud.google.com/">
+  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+</a>
+<a href="https://terraform.io/">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
+</a>
+<a href="https://fastapi.tiangolo.com/">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+</a>
+
+</div>
 
 ---
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+<div align="center">
 
-© 2025 Sumit Raj
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,24,30&height=2&width=60%" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/⚖️_LICENSE-MIT-f59e0b?style=for-the-badge&labelColor=0d1117&logo=opensourceinitiative&logoColor=white" />
+
+<br/><br/>
+
+<samp>
+Released under the <b>MIT License</b> — free to use, modify, and distribute.
+</samp>
+
+<br/><br/>
+
+<sub><samp>© 2025 &nbsp;·&nbsp; SUMIT RAJ &nbsp;·&nbsp; ALL RIGHTS RESERVED</samp></sub>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,24,30&height=2&width=60%" />
+
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:3b82f6,100:0d1117&height=120&section=footer&text=🚀%20Ship%20Fast%20·%20Deploy%20Confident&fontSize=20&fontColor=ffffff&animation=scaleIn" width="100%" />
